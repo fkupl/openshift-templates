@@ -17,13 +17,13 @@ Usage
 	for all projects:
 	```sh
 	oc login -u system:admin
-	oc replace --force -f https://gitlab.com/oprudkyi/openshift-templates/raw/master/nginx/nginx.yaml -n openshift
+	oc replace --force -f https://raw.githubusercontent.com/fkupl/openshift-templates/master/nginx/nginx.yaml -n openshift
 	```
 
 	or just into your project
 	```sh
 	oc login -u developer
-	oc replace --force -f https://gitlab.com/oprudkyi/openshift-templates/raw/master/nginx/nginx.yaml -n CURRENT_PROJECT_NAME
+	oc replace --force -f https://raw.githubusercontent.com/fkupl/openshift-templates/master/nginx/nginx.yaml -n CURRENT_PROJECT_NAME
 	```
 
 It will be available under 'Uncategorized' Group in openshift catalog of templates

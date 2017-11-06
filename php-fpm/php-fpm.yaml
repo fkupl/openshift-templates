@@ -732,7 +732,8 @@ objects:
             - '-c'
             - >-
               php-fpm --fpm-config /usr/local/etc/php-fpm.d/php-fpm.conf.template
-          image: ' '
+          ##seems like the following line is not needed, in fact causes an error in import
+		  ##image: ' '
           name: cnt-php-fpm
           ports:
           - containerPort: 9000
